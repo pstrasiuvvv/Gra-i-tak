@@ -11,6 +11,8 @@ tilesetImage.src = 'TX Tileset Grass.png';
 
 const playerImage = new Image();
 playerImage.src = 'Prototype_Character.png';
+const playerImage2 = new Image();
+playerImage2.src = 'Prototype_Character_Red.png';
 
 let gameState = 'menu'; // 'menu' | 'game' | 'gameover'
 
@@ -184,7 +186,7 @@ class Enemy {
 
   draw(offsetX, offsetY) {
     ctx.drawImage(
-      playerImage,
+      playerImage2,
       this.frameX * this.spriteWidth,
       0,
       this.spriteWidth,
